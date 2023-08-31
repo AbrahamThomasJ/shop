@@ -130,13 +130,12 @@ nav {
 
 /* Menu en mobile */
 .mobile-menu {
-    padding: 24px;
     top: 61px;
     position: absolute;
     background-color: var(--white);
-    border-radius: 5px;
     left: 0;
-    width: 100%;
+    width: calc(100% - 24px);
+    padding-left: 24px;
 }
 .mobile-menu a {
     text-decoration: none;
@@ -173,6 +172,7 @@ aside {
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    padding: 0 10px 10px 10px;
 }
 
 /* ShoppingCart */
@@ -354,7 +354,14 @@ aside {
 
   
 
-
+@media (max-width: 426px){
+    aside{
+        width: 76%;
+    }
+    #product-detail > img:nth-child(2) {
+        height: 300px;
+    }
+}
 
 
 @media (max-width: 640px) {
